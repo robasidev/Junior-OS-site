@@ -131,6 +131,11 @@
   .benefit h3{font-size:.98rem;font-weight:700;margin-bottom:6px;color:var(--ink)}
   .benefit p{color:var(--ink-soft);font-size:.88rem}
 
+  .gallery-section{background:var(--sand)}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .gallery figure{border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4}
+  .gallery img{width:100%;height:100%;object-fit:cover}
+
   .about{background:var(--primary-dark);color:#fff}
   .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:44px;align-items:center}
   .about-photo{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 24px 48px -16px rgba(0,0,0,.45)}
@@ -182,7 +187,7 @@
   }
 
   @media (max-width:820px){
-    .steps,.benefits{grid-template-columns:1fr 1fr}
+    .steps,.benefits,.gallery{grid-template-columns:1fr 1fr}
     .about-grid,.loc-grid{grid-template-columns:1fr}
     .about-photo{order:-1;max-width:320px;margin:0 auto}
   }
@@ -284,6 +289,22 @@
         <h3>Idade avançada</h3>
         <p>Mobilidade, equilíbrio e alívio de desgaste articular pra manter a rotina.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Atendimento de verdade</span>
+      <h2>Cada paciente, um plano diferente</h2>
+      <p>Fotos reais de sessões na clínica — de jovens a pacientes de mais idade.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="assets/galeria-1.jpg" alt="Doutor Emivaldo Maia mobilizando o ombro de um paciente" loading="lazy"></figure>
+      <figure><img src="assets/galeria-2.jpg" alt="Doutor Emivaldo Maia trabalhando o quadril de uma paciente" loading="lazy"></figure>
+      <figure><img src="assets/galeria-3.jpg" alt="Doutor Emivaldo Maia fazendo mobilização cervical" loading="lazy"></figure>
+      <figure><img src="assets/galeria-4.jpg" alt="Doutor Emivaldo Maia atendendo uma paciente jovem" loading="lazy"></figure>
     </div>
   </div>
 </section>
